@@ -48,6 +48,8 @@ CowJacket_automation/
 
 ├── jira_integration.py     # Handles Jira API connection & creating tickets
 
+├── test.py                 # testsdatabase and jira integration independently
+
 ├── logger.py               # Logging setup
 
 ├── main.py                 # Main workflow: fetch DB requests & create Jira tickets
@@ -142,7 +144,7 @@ COW-1 | Test Request from Python | Status: To Do | Open Request
 #### Run Automation Script
 
 ```bash
-python supabase_to_jira.py
+python jira_integration.py
 ```
 
 - Script fetches new phone requests and creates Jira tickets.
