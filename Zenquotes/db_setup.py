@@ -86,20 +86,9 @@ def add_multiple_users(users):
 if __name__ == "__main__":
     users = [
         ("Feyisayo Amstrong", "solapeajiboye@gmail.com", True, "daily"),
-        ("Faruk Sedik", "faruksedik@gmail.com", True, "weekly"),
-        ("Yussuf Alade", "aladeyussuf.kofo@gmail.com", True, "daily"),
-        ("Ufuoma Ejite", "ufuoma.ejite@gmail.com", True, "daily"),
-        ("Susan Amgbare", "susantamunokubie@gmail.com", True, "daily"),
-        ("Najeeb Sulaiman", "beejan003@gmail.com", True, "daily"),
-        ("Mohammed Abubakar", "ammedabubakard500@gmail.com", True, "daily"),
-        ("Ganiu Odeyinka", "omowalefst@gmail.com", True, "daily"),
-        ("Adebola Adesoyin", "adeboladesoyin@gmail.com", True, "daily"),
-        ("Ayooluwa Jesuniyi", "jesuniyig@gmail.com", True, "daily"),
-        ("Olukayode Olusegun", "olukayodeoluseguno@gmail.com", True, "daily"),
-        ("Okoli Ogechukwu", "okoliogechi74@gmail.com", True, "daily"),
-        ("Joshua Akintayo", "akinspajo@gmail.com", True, "daily"),
-        ("Kabir Olawale", "kabirolawalemohammed@gmail.com", True, "daily"),
-        ("Kate Chisom", "katechisom072@gmail.com", True, "daily")
+        ("Feyi Armstrong", "feyiarmstrong@gmail.com", True, "weekly"),
+        ("lady kash", "kashopefoluwaarmstrong@gmail.com", True, "daily"),
+  
     ]
 
     add_multiple_users(users)
