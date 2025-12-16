@@ -9,11 +9,11 @@ def get_connection():
     """Connect to the PostgreSQL database."""
     try:
         conn = psycopg2.connect(
-            host="localhost",
-            dbname="mindfuel_db",
-            user="postgres",   
-            password=os.getenv("password"),
-            port="5433"
+            host=os.getenv("DB_HOST"),
+            dbname=os.getenv("DB_NAME"),
+            user=os.getenv("DB_USER"),   
+            password=os.getenv("DB_PASSWORD"),
+            port=os.getenv("DB_PORT")
         )
 
         print("Database connected successfully!")
