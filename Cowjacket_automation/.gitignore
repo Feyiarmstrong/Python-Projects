@@ -1,0 +1,19 @@
+# Environment files
+.env
+
+# Python virtual environments
+venv/
+
+# Logs
+logs/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: local CSVs
+*.csv
