@@ -7,13 +7,9 @@ Containerizing the MindFuel quote delivery service into a portable Docker image.
 ## What the Application Does
 
 - Fetches random quotes from ZenQuotes API
-
 - Connects to PostgreSQL database
-
 - Retrieves active subscribers
-
 - Sends personalized emails with quotes
-
 - Logs all activities
 
 ## Files
@@ -50,24 +46,33 @@ RUN apt-get update && apt-get install -y build-essential libpq-dev && rm -rf /va
 
 # Install Python dependencies
 COPY requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
+
 COPY . .
 
 # Run the app
+
 CMD ["python", "main.py"]
 
 ## Environment Variables
 
 Create .env.docker file:
+
 DB_HOST
+
 DB_NAME
+
 DB_USER
+
 DB_PASSWORD
+
 DB_PORT=5432
 
 ddb_email=your-email@gmail.com
+
 ddb_password=your-app-password
 
 ## Building the Image
@@ -118,9 +123,11 @@ docker run --env-file .env.docker --network mindfuel-network mindfuel-quotes:lat
 docker logs <container-id>
 
 # Expected output:
-# Database connected successfully!
-# Fetched quote: "..." — Author
-# Email sent to user@example.com
+Database connected successfully!
+
+Fetched quote: "..." — Author
+
+Email sent to user@example.com
 
 ### Verify Database Connection
 # Connect to the database
@@ -149,13 +156,9 @@ Visit https://hub.docker.com/r/your-username/mindfuel-quotes
 ✅ Dockerfile created:
 
 - Uses lightweight base image (python:3.11-slim)
-
 - Installs all dependencies
-
 - Sets environment variables
-
 - Copies application code
-
 - Clear entrypoint (CMD [“python”, “main.py”])
 
 ✅ Image built locally:
