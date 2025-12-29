@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the app
-CMD ["tail", "-f", "/dev/null"]
+CMD ["python", "main,py"]
